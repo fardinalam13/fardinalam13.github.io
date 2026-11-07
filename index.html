@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fardin Alam Alif · Full-Stack Software Engineer (.NET / Angular)</title>
+  <meta name="description" content="Portfolio of Fardin Alam Alif, a Full-Stack Software Engineer in Dhaka building enterprise ERP systems with C#, ASP.NET Core, Angular and SQL Server.">
+  <meta name="author" content="Fardin Alam Alif">
+  <meta name="theme-color" content="#1B2922">
+  <link rel="canonical" href="https://fardinalam13.github.io/">
+
+  <!-- Open Graph / LinkedIn preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fardin Alam Alif · Full-Stack Software Engineer">
+  <meta property="og:description" content="Enterprise ERP developer working with C#, ASP.NET Core, Angular and SQL Server. 2+ years of experience, 40+ corporations served.">
+  <meta property="og:url" content="https://fardinalam13.github.io/">
+  <meta property="og:image" content="https://fardinalam13.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Neo-grotesque sans: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Home">
+        <span class="nav__mark">FA</span>
+        <span class="nav__name">Fardin Alam</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark / light mode" title="Toggle theme">
+          <i class="fa-solid fa-sun theme-toggle__sun" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon theme-toggle__moon" aria-hidden="true"></i>
+        </button>
+        <button class="nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="grid-lines"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow reveal"><span class="dot"></span> Available for new opportunities</p>
+          <h1 class="hero__title reveal">
+            Hi, I'm <span class="accent">Fardin Alam Alif</span>
+          </h1>
+          <p class="hero__role reveal">
+            Full-Stack Software Engineer ·
+            <span class="typed" id="typed" aria-live="polite"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero__lead reveal">
+            I design and build scalable enterprise ERP and management systems with
+            <strong>C#, ASP.NET Core, Angular and SQL Server</strong> — modules, dashboards and reports
+            used daily by 40+ corporations and 2,500+ staff.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#projects"><i class="fa-solid fa-code"></i> View Projects</a>
+            <a class="btn btn--ghost" href="assets/Fardin_Alam_CV.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
+          </div>
+
+          <div class="hero__social reveal">
+            <a href="https://github.com/fardinalam13" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fardinalam13" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:alamfardin1521@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="portrait">
+            <div class="portrait__ring" aria-hidden="true"></div>
+            <div class="portrait__glow" aria-hidden="true"></div>
+            <picture>
+              <source srcset="assets/img/headshot.webp" type="image/webp">
+              <img src="assets/img/headshot.png" alt="Portrait of Fardin Alam Alif" width="472" height="450" fetchpriority="high">
+            </picture>
+            <div class="float-card float-card--1" aria-hidden="true">
+              <i class="devicon-dotnetcore-plain colored"></i><span>.NET Core</span>
+            </div>
+            <div class="float-card float-card--2" aria-hidden="true">
+              <i class="devicon-angular-plain colored"></i><span>Angular</span>
+            </div>
+            <div class="float-card float-card--3" aria-hidden="true">
+              <i class="devicon-microsoftsqlserver-plain colored"></i><span>SQL Server</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span class="scroll-hint__mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats" aria-label="Highlights">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num" data-count="2" data-suffix="+">0</span><span class="stat__label">Years experience</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="65" data-suffix="+">0</span><span class="stat__label">ERP modules in product</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="40" data-suffix="+">0</span><span class="stat__label">Corporations served</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="2500" data-suffix="+">0</span><span class="stat__label">Daily staff users</span></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">01 — About</span>
+          <h2 class="section__title">Building the systems businesses run on</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              I'm a Full-Stack Software Engineer with <strong>2+ years of experience</strong> designing, developing and
+              maintaining scalable enterprise web applications across the full software development life cycle.
+              At <strong>Infocrat Solutions Limited</strong> I work on ESimSol, a 65+ module ERP used across
+              procurement, inventory, production, HRM &amp; payroll and more.
+            </p>
+            <p>
+              My core stack is <strong>C#, ASP.NET Core, Angular and SQL Server</strong>. I care about clean
+              architecture, well-designed schemas and fast queries — and I use AI-assisted tools such as
+              Claude Code and Codex to ship faster without cutting corners.
+            </p>
+            <ul class="about__facts">
+              <li><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</li>
+              <li><i class="fa-solid fa-graduation-cap"></i> B.Sc. in Software Engineering, NSTU</li>
+              <li><i class="fa-solid fa-language"></i> Bangla (native) · English (professional)</li>
+            </ul>
+          </div>
+
+          <div class="about__cards">
+            <article class="info-card reveal">
+              <i class="fa-solid fa-layer-group"></i>
+              <h3>Architecture</h3>
+              <p>Clean Architecture, CQRS, MVC, Microservices, OOP &amp; design patterns.</p>
+            </article>
+            <article class="info-card reveal">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h3>Secure APIs</h3>
+              <p>RESTful APIs with role-based access control and validated approval flows.</p>
+            </article>
+            <article class="info-card reveal">
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>Dashboards &amp; Reports</h3>
+              <p>Interactive dashboards, previews and Excel exports with AG Grid &amp; AG Charts.</p>
+            </article>
+            <article class="info-card reveal">
+              <i class="fa-solid fa-database"></i>
+              <h3>Data Engineering</h3>
+              <p>Schema design, stored procedures, views and SQL query optimisation.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">02 — Skills</span>
+          <h2 class="section__title">Tools I work with</h2>
+        </header>
+
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-server"></i> Backend</h3>
+            <ul class="chips">
+              <li><i class="devicon-csharp-plain colored"></i> C#</li>
+              <li><i class="devicon-dot-net-plain colored"></i> .NET 8 / 10</li>
+              <li><i class="devicon-dotnetcore-plain colored"></i> ASP.NET Core</li>
+              <li><i class="devicon-dot-net-plain colored"></i> .NET MVC</li>
+              <li><i class="fa-solid fa-plug"></i> RESTful APIs</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-display"></i> Frontend</h3>
+            <ul class="chips">
+              <li><i class="devicon-angular-plain colored"></i> Angular</li>
+              <li><i class="devicon-typescript-plain colored"></i> TypeScript</li>
+              <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+              <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+              <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+              <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
+              <li><i class="fa-solid fa-table"></i> AG Grid</li>
+              <li><i class="fa-solid fa-chart-column"></i> AG Charts</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-database"></i> Databases</h3>
+            <ul class="chips">
+              <li><i class="devicon-microsoftsqlserver-plain colored"></i> MS SQL Server</li>
+              <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+              <li><i class="fa-solid fa-gears"></i> Stored Procedures</li>
+              <li><i class="fa-solid fa-eye"></i> Views</li>
+              <li><i class="fa-solid fa-diagram-project"></i> Schema Design</li>
+              <li><i class="fa-solid fa-gauge-high"></i> Query Optimisation</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-cubes"></i> Architecture</h3>
+            <ul class="chips">
+              <li>Clean Architecture</li>
+              <li>CQRS</li>
+              <li>Microservices</li>
+              <li>MVC</li>
+              <li>OOP</li>
+              <li>Design Patterns</li>
+              <li>Role-Based Access Control</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools &amp; Platforms</h3>
+            <ul class="chips">
+              <li><i class="devicon-visualstudio-plain colored"></i> Visual Studio</li>
+              <li><i class="devicon-vscode-plain colored"></i> VS Code</li>
+              <li><i class="devicon-git-plain colored"></i> Git</li>
+              <li><i class="devicon-github-original"></i> GitHub</li>
+              <li><i class="devicon-azure-plain colored"></i> Azure Data Studio</li>
+              <li><i class="devicon-chrome-plain colored"></i> Chrome DevTools</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-robot"></i> AI-Assisted Development</h3>
+            <ul class="chips">
+              <li><i class="fa-solid fa-terminal"></i> Claude Code</li>
+              <li><i class="fa-solid fa-code"></i> Codex</li>
+              <li><i class="fa-solid fa-wand-magic-sparkles"></i> Antigravity</li>
+              <li><i class="devicon-google-plain colored"></i> Google AI Studio</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3><i class="fa-solid fa-code"></i> Other Languages</h3>
+            <ul class="chips">
+              <li><i class="devicon-python-plain colored"></i> Python</li>
+              <li><i class="devicon-java-plain colored"></i> Java</li>
+              <li><i class="devicon-php-plain colored"></i> PHP</li>
+              <li><i class="devicon-c-plain colored"></i> C</li>
+              <li><i class="fa-solid fa-database"></i> SQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">03 — Experience</span>
+          <h2 class="section__title">Where I've worked</h2>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__date"><i class="fa-regular fa-calendar"></i> May 2024 – Present</span>
+                <span class="timeline__loc"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</span>
+              </div>
+              <h3>Software Engineer</h3>
+              <p class="timeline__company">Infocrat Solutions Limited</p>
+
+              <div class="timeline__project">
+                <h4><i class="fa-solid fa-building"></i> ESimSol ERP <span>— core ERP management &amp; reporting system</span></h4>
+                <ul>
+                  <li>Designed and developed several Legal and complex modules with direct client follow-up in a 65+ module ERP (Procurement, Inventory, Textile, Production, RMG, Commercial, HRM &amp; Payroll, Accessories, Buying House) supporting <strong>40+ corporations and 2,500+ staff</strong>.</li>
+                  <li>Led development of the <strong>Production and Reporting modules</strong> for Packman's ERP — production workflows, dashboards, reports, print previews and Excel generation.</li>
+                  <li>Designed tables, views and stored procedures for dynamic setups, validation and approval flows, improving efficiency across operations.</li>
+                </ul>
+              </div>
+
+              <div class="timeline__project">
+                <h4><i class="fa-solid fa-list-check"></i> ESimSol SM <span>— tasks, services &amp; software management system</span></h4>
+                <ul>
+                  <li>Designed the UI and integrated Task &amp; Sprint Management, To-Do List, User Management, Customer Service records &amp; notifications, and role-based access control using Angular, JavaScript and .NET.</li>
+                  <li>Built interactive dashboards and reports — Usage Log, Server Log, Performance, Customer &amp; Service — with <strong>AG Charts and AG Grid</strong>.</li>
+                  <li>Enhanced operational efficiency, governance and real-time monitoring across <strong>20+ programmers and 15+ managers</strong>.</li>
+                </ul>
+              </div>
+
+              <ul class="tags">
+                <li>C#</li><li>ASP.NET Core</li><li>.NET MVC</li><li>Angular</li><li>TypeScript</li><li>SQL Server</li><li>AG Grid</li><li>AG Charts</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">04 — Projects</span>
+          <h2 class="section__title">Selected work</h2>
+        </header>
+
+        <div class="projects">
+
+          <article class="project reveal">
+            <a class="project__media" href="https://github.com/fardinalam13/Eye-Cataract-Detection-App" target="_blank" rel="noopener" aria-label="Eye Cataract Detector on GitHub">
+              <img src="assets/img/cataract-1.webp" alt="Eye Cataract Detector predicting cataract with 74.66% probability" loading="lazy" width="772" height="861">
+              <img class="project__media-alt" src="assets/img/cataract-2.webp" alt="Eye Cataract Detector predicting a normal eye" loading="lazy" width="771" height="860">
+            </a>
+            <div class="project__body">
+              <span class="project__kind"><i class="fa-solid fa-flask"></i> Research · Deep Learning</span>
+              <h3>Eye Cataract Detector</h3>
+              <p>
+                A web application that detects and scores the probability of cataracts from retinal fundus images
+                using a <strong>hybrid CNN-LSTM model with an attention mechanism</strong>, combined with image
+                preprocessing and feature-extraction techniques.
+              </p>
+              <ul class="tags">
+                <li>Python</li><li>CNN-LSTM</li><li>JavaScript</li><li>Bootstrap</li><li>HTML/CSS</li>
+              </ul>
+              <div class="project__links">
+                <span class="project__date"><i class="fa-regular fa-calendar"></i> Dec 2024 – Apr 2025</span>
+                <a href="https://github.com/fardinalam13/Eye-Cataract-Detection-App" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <a class="project__media" href="https://github.com/fardinalam13/Project-Aahar" target="_blank" rel="noopener" aria-label="Aahar on GitHub">
+              <img src="assets/img/aahar-1.webp" alt="আহার landing page with customer and vendor login" loading="lazy" width="1023" height="460">
+              <img class="project__media-alt" src="assets/img/aahar-2.webp" alt="আহার food listing with categories, prices and add-to-cart" loading="lazy" width="904" height="439">
+            </a>
+            <div class="project__body">
+              <span class="project__kind"><i class="fa-solid fa-utensils"></i> Full-Stack Web App</span>
+              <h3>আহার — Online Food Delivery System</h3>
+              <p>
+                A multi-vendor food ordering platform for people living away from home: customer and vendor
+                logins, categorised menus with calorie and price details, cart and ordering hours — built to make
+                hygienic, affordable food easy to reach.
+              </p>
+              <ul class="tags">
+                <li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Bootstrap</li><li>HTML/CSS</li>
+              </ul>
+              <div class="project__links">
+                <span class="project__date"><i class="fa-regular fa-calendar"></i> May 2023 – Sep 2023</span>
+                <a href="https://github.com/fardinalam13/Project-Aahar" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <a class="project__media" href="https://github.com/fardinalam13/Running_Rahil" target="_blank" rel="noopener" aria-label="Running Rahil on GitHub">
+              <img src="assets/img/running-rahil.webp" alt="Running Rahil platformer gameplay showing level 2 with coins and enemies" loading="lazy" width="1200" height="674">
+            </a>
+            <div class="project__body">
+              <span class="project__kind"><i class="fa-solid fa-gamepad"></i> Desktop Game · Award Winner</span>
+              <h3>Running Rahil</h3>
+              <p>
+                A 2D platformer built from a Bangladeshi perspective: Rahil, a young lad from Bangladesh, runs,
+                jumps and collects coins while overcoming obstacles across levels.
+                <strong>Winner — Gaming Application, Technology Festival Project Showcase 2023.</strong>
+              </p>
+              <ul class="tags">
+                <li>Java</li><li>Game Loop</li><li>2D Graphics</li>
+              </ul>
+              <div class="project__links">
+                <span class="project__date"><i class="fa-regular fa-calendar"></i> Jun 2022 – Sep 2022</span>
+                <a href="https://github.com/fardinalam13/Running_Rahil" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="projects__more reveal">
+          <a class="btn btn--ghost" href="https://github.com/fardinalam13" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> More on GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION & ACHIEVEMENTS ================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">05 — Education &amp; Achievements</span>
+          <h2 class="section__title">Background</h2>
+        </header>
+
+        <div class="edu">
+          <div class="edu__col">
+            <h3 class="edu__heading reveal"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+
+            <article class="edu-card reveal">
+              <span class="edu-card__year">2020 – 2025</span>
+              <h4>B.Sc. in Software Engineering</h4>
+              <p>Institute of Information Technology, Noakhali Science and Technology University</p>
+              <span class="edu-card__grade">CGPA 3.53 / 4.00</span>
+            </article>
+
+            <article class="edu-card reveal">
+              <span class="edu-card__year">2019</span>
+              <h4>Higher Secondary Certificate</h4>
+              <p>Dhaka Udyan Government College, Dhaka</p>
+              <span class="edu-card__grade">GPA 5.00 / 5.00</span>
+            </article>
+
+            <article class="edu-card reveal">
+              <span class="edu-card__year">2017</span>
+              <h4>Secondary School Certificate</h4>
+              <p>Chatkhil PG Government High School, Noakhali</p>
+              <span class="edu-card__grade">GPA 4.95 / 5.00</span>
+            </article>
+          </div>
+
+          <div class="edu__col">
+            <h3 class="edu__heading reveal"><i class="fa-solid fa-trophy"></i> Achievements &amp; Certificates</h3>
+            <ul class="awards">
+              <li class="reveal"><i class="fa-solid fa-medal gold"></i><div><strong>Winner</strong> — Gaming Application, Technology Festival: Project Showcase Competition 2023</div></li>
+              <li class="reveal"><i class="fa-solid fa-medal bronze"></i><div><strong>2nd Runner-up</strong> — Eco-friendly Innovative Technology Ideas, HULT Prize NSTU 2020</div></li>
+              <li class="reveal"><i class="fa-solid fa-medal silver"></i><div><strong>1st Runner-up</strong> — English Poem Recitation, DUGC 2018</div></li>
+              <li class="reveal"><i class="fa-solid fa-certificate"></i><div>Front End Development – HTML <span>· Great Learning</span></div></li>
+              <li class="reveal"><i class="fa-solid fa-certificate"></i><div>Software Testing <span>· Great Learning</span></div></li>
+              <li class="reveal"><i class="fa-solid fa-certificate"></i><div>Building Games using Java <span>· Great Learning</span></div></li>
+            </ul>
+
+            <h3 class="edu__heading reveal"><i class="fa-solid fa-people-group"></i> Activities</h3>
+            <ul class="chips chips--soft reveal">
+              <li>NSTU Debating Society</li>
+              <li>BASIS</li>
+              <li>IT Club</li>
+              <li>Volunteer · All of One BD</li>
+              <li>Volunteer · Project Showcase 2023</li>
+              <li>Founding Member · English Language Club, DUGC</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <span class="section__kicker">06 — Contact</span>
+          <h2 class="section__title">Let's build something together</h2>
+          <p>
+            I'm open to full-stack .NET / Angular roles and interesting enterprise projects.
+            The fastest way to reach me is email or LinkedIn.
+          </p>
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="mailto:alamfardin1521@gmail.com?subject=Hello%20Fardin"><i class="fa-solid fa-envelope"></i> alamfardin1521@gmail.com</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/fardinalam13" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+            <a class="btn btn--ghost" href="https://github.com/fardinalam13" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+          <p class="contact__loc"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Fardin Alam Alif. Built with plain HTML, CSS &amp; JavaScript.</p>
+      <div class="footer__links">
+        <a href="https://github.com/fardinalam13" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/fardinalam13" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:alamfardin1521@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
