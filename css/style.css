@@ -413,7 +413,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .edu { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
 .edu__heading { font-size: 1.05rem; display: flex; align-items: center; gap: .6rem; margin-bottom: 1.2rem; }
 .edu__heading i { color: var(--primary); }
-.edu__col > .edu__heading + .edu__heading, .awards + .edu__heading { margin-top: 2rem; }
+.edu__col > .edu__heading + .edu__heading, .awards + .edu__heading, .chips + .edu__heading { margin-top: 2rem; }
+.interests li i { color: var(--primary); font-size: .9rem; }
 
 .edu-card {
   position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
