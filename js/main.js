@@ -137,6 +137,78 @@
     setTimeout(tick, 600);
   }
 
+  /* ---------- LeetCode stats (static snapshot, refreshed live when the API answers) ---------- */
+  const LC_USER = 'fardin_31';
+  const lcCard = $('#lcCard');
+  const lcStatus = $('#lcStatus');
+  let lcData = {
+    totalSolved: 227, totalQuestions: 4105,
+    easySolved: 108, totalEasy: 975,
+    mediumSolved: 110, totalMedium: 2142,
+    hardSolved: 9, totalHard: 988,
+    ranking: 754323, submissions: 258
+  };
+  let lcVisible = false;
+
+  function paintLC() {
+    if (!lcCard) return;
+    const d = lcData;
+    $$('[data-lc]', lcCard).forEach(el => {
+      const key = el.dataset.lc;
+      if (!(key in d)) return;
+      if (el.classList.contains('stat__num')) {
+        el.dataset.count = d[key];
+        if (lcVisible) el.textContent = fmt(d[key]);
+      } else {
+        el.textContent = fmt(d[key]);
+      }
+    });
+    if (!lcVisible) return;
+    // ring: composition of solved problems by difficulty (bars below show progress per pool)
+    const C = 2 * Math.PI * 52, gap = 5;
+    const solved = [d.easySolved, d.mediumSolved, d.hardSolved];
+    const usable = C - gap * 3;
+    let offset = 0;
+    $$('.lc__arc', lcCard).forEach(arc => {
+      const i = Number(arc.dataset.arc);
+      const len = Math.max((solved[i] / d.totalSolved) * usable, 2);
+      arc.style.strokeDasharray = `${len} ${C - len}`;
+      arc.style.strokeDashoffset = -offset;
+      offset += len + gap;
+    });
+    const pct = { easy: d.easySolved / d.totalEasy, med: d.mediumSolved / d.totalMedium, hard: d.hardSolved / d.totalHard };
+    $$('.lc__bar-fill', lcCard).forEach(bar => { bar.style.width = (pct[bar.dataset.bar] * 100).toFixed(1) + '%'; });
+  }
+
+  if (lcCard) {
+    paintLC();
+    if ('IntersectionObserver' in window) {
+      const lio = new IntersectionObserver((entries, obs) => {
+        if (entries.some(e => e.isIntersecting)) { lcVisible = true; paintLC(); obs.disconnect(); }
+      }, { threshold: 0.3 });
+      lio.observe(lcCard);
+    } else { lcVisible = true; paintLC(); }
+
+    const ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    if (ctrl) setTimeout(() => ctrl.abort(), 9000);
+    fetch(`https://leetcode-api-faisalshohag.vercel.app/${LC_USER}`, ctrl ? { signal: ctrl.signal } : {})
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .then(d => {
+        if (!d || !d.totalSolved) throw new Error('bad payload');
+        const all = (d.totalSubmissions || []).find(s => s.difficulty === 'All');
+        lcData = {
+          totalSolved: d.totalSolved, totalQuestions: d.totalQuestions,
+          easySolved: d.easySolved, totalEasy: d.totalEasy,
+          mediumSolved: d.mediumSolved, totalMedium: d.totalMedium,
+          hardSolved: d.hardSolved, totalHard: d.totalHard,
+          ranking: d.ranking, submissions: all ? all.submissions : lcData.submissions
+        };
+        paintLC();
+        if (lcStatus) lcStatus.textContent = 'Live from LeetCode · updated just now';
+      })
+      .catch(() => { if (lcStatus) lcStatus.textContent = 'Snapshot from 8 Nov 2026 (live refresh unavailable right now)'; });
+  }
+
   /* ---------- Footer year ---------- */
   $('#year').textContent = new Date().getFullYear();
 

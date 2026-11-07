@@ -57,6 +57,7 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#leetcode">LeetCode</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -429,11 +430,74 @@
       </div>
     </section>
 
-    <!-- ================= EDUCATION & ACHIEVEMENTS ================= -->
-    <section class="section" id="education">
+    <!-- ================= LEETCODE ================= -->
+    <section class="section" id="leetcode">
       <div class="container">
         <header class="section__head reveal">
-          <span class="section__kicker">05 — Education &amp; Achievements</span>
+          <span class="section__kicker">05 — Problem Solving</span>
+          <h2 class="section__title">Keeping the fundamentals sharp on LeetCode</h2>
+        </header>
+
+        <div class="lc">
+          <div class="lc__intro reveal">
+            <img class="lc__art" src="assets/img/leetcode.webp" alt="" width="387" height="408" loading="lazy">
+            <p>
+              Alongside work I solve algorithm, data-structure and SQL problems regularly — it keeps
+              complexity analysis, pattern recognition and query writing second nature. The numbers here
+              are pulled live from my profile.
+            </p>
+            <a class="btn btn--primary" href="https://leetcode.com/u/fardin_31/" target="_blank" rel="noopener">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> View LeetCode profile
+            </a>
+          </div>
+
+          <div class="lc__card reveal" id="lcCard">
+            <div class="lc__ring" role="img" aria-label="Problems solved by difficulty">
+              <svg viewBox="0 0 120 120" aria-hidden="true">
+                <circle class="lc__track" cx="60" cy="60" r="52"></circle>
+                <circle class="lc__arc lc__arc--easy" cx="60" cy="60" r="52" data-arc="0"></circle>
+                <circle class="lc__arc lc__arc--med"  cx="60" cy="60" r="52" data-arc="1"></circle>
+                <circle class="lc__arc lc__arc--hard" cx="60" cy="60" r="52" data-arc="2"></circle>
+              </svg>
+              <div class="lc__ring-label">
+                <span class="stat__num" data-count="227" data-lc="totalSolved">0</span>
+                <small>/ <span data-lc="totalQuestions">4,105</span> solved</small>
+              </div>
+            </div>
+
+            <ul class="lc__bars">
+              <li class="lc__bar">
+                <span class="lc__bar-head"><b class="easy">Easy</b><span><span data-lc="easySolved">108</span> / <span data-lc="totalEasy">975</span></span></span>
+                <span class="lc__bar-track"><span class="lc__bar-fill lc__bar-fill--easy" data-bar="easy"></span></span>
+              </li>
+              <li class="lc__bar">
+                <span class="lc__bar-head"><b class="med">Medium</b><span><span data-lc="mediumSolved">110</span> / <span data-lc="totalMedium">2,142</span></span></span>
+                <span class="lc__bar-track"><span class="lc__bar-fill lc__bar-fill--med" data-bar="med"></span></span>
+              </li>
+              <li class="lc__bar">
+                <span class="lc__bar-head"><b class="hard">Hard</b><span><span data-lc="hardSolved">9</span> / <span data-lc="totalHard">988</span></span></span>
+                <span class="lc__bar-track"><span class="lc__bar-fill lc__bar-fill--hard" data-bar="hard"></span></span>
+              </li>
+            </ul>
+
+            <ul class="lc__tiles">
+              <li><i class="fa-solid fa-ranking-star"></i><b data-lc="ranking">754,323</b><span>Global rank</span></li>
+              <li><i class="fa-solid fa-paper-plane"></i><b data-lc="submissions">258</b><span>Total submissions</span></li>
+              <li><i class="fa-solid fa-medal"></i><b>3</b><span>Badges earned</span></li>
+              <li><i class="fa-solid fa-database"></i><b>SQL</b><span>Latest badge track</span></li>
+            </ul>
+
+            <p class="lc__note"><i class="fa-solid fa-circle-info"></i> <span id="lcStatus">Snapshot from 8 Nov 2026 — refreshing…</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION & ACHIEVEMENTS ================= -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">06 — Education &amp; Achievements</span>
           <h2 class="section__title">Background</h2>
         </header>
 
@@ -501,10 +565,10 @@
     </section>
 
     <!-- ================= CONTACT ================= -->
-    <section class="section section--alt" id="contact">
+    <section class="section" id="contact">
       <div class="container">
         <div class="contact reveal">
-          <span class="section__kicker">06 — Contact</span>
+          <span class="section__kicker">07 — Contact</span>
           <h2 class="section__title">Let's build something together</h2>
           <p>
             I'm open to full-stack .NET / Angular roles and interesting enterprise projects.
