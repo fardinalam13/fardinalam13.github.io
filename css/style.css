@@ -589,3 +589,20 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .reveal { opacity: 1; transform: none; }
   .caret { display: none; }
 }
+
+/* ---------- LeetCode brand icon (inline SVG sprite) & card header ---------- */
+.icon-lc { width: 1.05em; height: 1.05em; fill: currentColor; display: inline-block; vertical-align: -.15em; }
+.hero__social .icon-lc, .footer__links .icon-lc { width: 1.1em; height: 1.1em; }
+.lc__brand {
+  grid-column: 1 / -1; display: flex; align-items: center; gap: .85rem;
+  padding-bottom: 1.2rem; border-bottom: 1px dashed var(--border);
+}
+.lc__brand img {
+  width: 46px; height: 46px; padding: 8px; border-radius: 12px; background: #1B2922;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08);
+}
+.lc__brand b { display: block; font-size: 1rem; line-height: 1.2; }
+.lc__brand span { font-size: .82rem; color: var(--text-muted); }
+.lc__brand a { margin-left: auto; font-size: .85rem; font-weight: 600; color: var(--primary); white-space: nowrap; }
+.lc__brand a i { font-size: .75rem; margin-left: .25rem; }
+@media (max-width: 860px) { .lc__brand { width: 100%; } }
