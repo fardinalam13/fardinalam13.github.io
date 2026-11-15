@@ -1,6 +1,6 @@
 # fardinalam13.github.io
 
-Personal portfolio of **Fardin Alam Alif** — Full-Stack Software Engineer (.NET / Angular).
+Personal portfolio of **Fardin Alam Alif** — Full-Stack Software Engineer (.NET / Java / TypeScript).
 
 Live: https://fardinalam13.github.io
 
