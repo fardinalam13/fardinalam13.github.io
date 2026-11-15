@@ -120,7 +120,7 @@
 
   /* ---------- Typing effect (hero) ---------- */
   const typedEl = $('#typed');
-  const phrases = ['.NET Developer', 'Angular Developer', 'SQL Server Specialist', 'ERP Systems Builder'];
+  const phrases = ['.NET Developer', 'Angular Developer', 'Java Developer', 'SQL Server Specialist', 'ERP Systems Builder'];
   if (reduceMotion) {
     typedEl.textContent = phrases[0];
   } else {

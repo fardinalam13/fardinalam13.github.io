@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fardin Alam Alif · Full-Stack Software Engineer (.NET / Angular)</title>
-  <meta name="description" content="Portfolio of Fardin Alam Alif, a Full-Stack Software Engineer in Dhaka building enterprise ERP systems with C#, ASP.NET Core, Angular and SQL Server.">
+  <title>Fardin Alam Alif · Full-Stack Software Engineer (.NET / Angular / Java)</title>
+  <meta name="description" content="Portfolio of Fardin Alam Alif, a Full-Stack Software Engineer in Dhaka building enterprise ERP systems with C#, ASP.NET Core, Angular, Java and SQL Server.">
   <meta name="author" content="Fardin Alam Alif">
   <meta name="theme-color" content="#1B2922">
   <link rel="canonical" href="https://fardinalam13.github.io/">
@@ -12,7 +12,7 @@
   <!-- Open Graph / LinkedIn preview -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Fardin Alam Alif · Full-Stack Software Engineer">
-  <meta property="og:description" content="Enterprise ERP developer working with C#, ASP.NET Core, Angular and SQL Server. 2+ years of experience, 40+ corporations served.">
+  <meta property="og:description" content="Enterprise ERP developer working with C#, ASP.NET Core, Angular, Java and SQL Server. 2+ years of experience, 40+ corporations served.">
   <meta property="og:url" content="https://fardinalam13.github.io/">
   <meta property="og:image" content="https://fardinalam13.github.io/assets/img/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -99,7 +99,7 @@
           <p class="hero__lead reveal">
             I'm a software engineer from Dhaka, Bangladesh who turns messy business requirements into clean,
             Organized, Secure, maintainable software. I work across the whole stack with
-            <strong>C#, ASP.NET Core, Angular and SQL Server</strong>, and I like owning a feature
+            <strong>C#, ASP.NET Core, Angular, Java and SQL Server</strong>, and I like owning a feature
             end to end, from the database schema to the last pixel of the User Interface.
           </p>
 
@@ -133,6 +133,9 @@
             <div class="float-card float-card--3" aria-hidden="true">
               <i class="devicon-microsoftsqlserver-plain colored"></i><span>SQL Server</span>
             </div>
+            <div class="float-card float-card--4" aria-hidden="true">
+              <i class="devicon-java-plain colored"></i><span>Java</span>
+            </div>
           </div>
         </div>
       </div>
@@ -147,7 +150,7 @@
       <div class="container stats__grid">
         <div class="stat reveal"><span class="stat__num" data-count="2" data-suffix="+">0</span><span class="stat__label">Years of experience</span></div>
         <div class="stat reveal"><span class="stat__num" data-count="5" data-suffix="">0</span><span class="stat__label">Enterprise products I build on</span></div>
-        <div class="stat reveal"><span class="stat__num" data-count="3" data-suffix="+">0</span><span class="stat__label">Personal projects shipped</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="4" data-suffix="+">0</span><span class="stat__label">Personal projects shipped</span></div>
         <div class="stat reveal"><span class="stat__num" data-count="3" data-suffix="">0</span><span class="stat__label">Awards &amp; recognitions</span></div>
       </div>
     </section>
@@ -168,7 +171,7 @@
               requirements with clients, modelling the data, building the API and UI, and supporting what I ship.
             </p>
             <p>
-              My core stack is <strong>C#, ASP.NET Core, Angular and SQL Server</strong>. I care about clean
+              My core stack is <strong>C#, ASP.NET Core, Angular and SQL Server</strong>, with <strong>Java</strong> for desktop and game projects. I care about clean
               architecture, well-designed schemas and fast queries, and I use AI-assisted tools such as
               Claude Code and Codex to move faster without cutting corners. Outside work I build side projects
               - from a deep-learning cataract detector to an award-winning 2D game.
@@ -219,6 +222,7 @@
             <h3><i class="fa-solid fa-server"></i> Backend</h3>
             <ul class="chips">
               <li><i class="devicon-csharp-plain colored"></i> C#</li>
+              <li><i class="devicon-java-plain colored"></i> Java</li>
               <li><i class="devicon-dot-net-plain colored"></i> .NET 8 / 10</li>
               <li><i class="devicon-dotnetcore-plain colored"></i> ASP.NET Core</li>
               <li><i class="devicon-dot-net-plain colored"></i> .NET MVC</li>
@@ -291,7 +295,6 @@
             <h3><i class="fa-solid fa-code"></i> Other Languages</h3>
             <ul class="chips">
               <li><i class="devicon-python-plain colored"></i> Python</li>
-              <li><i class="devicon-java-plain colored"></i> Java</li>
               <li><i class="devicon-php-plain colored"></i> PHP</li>
               <li><i class="devicon-c-plain colored"></i> C</li>
               <li><i class="fa-solid fa-database"></i> SQL</li>
@@ -356,6 +359,29 @@
         </header>
 
         <div class="projects">
+
+          <article class="project reveal">
+            <a class="project__media" href="https://github.com/fardinalam13/school-admission-system" target="_blank" rel="noopener" aria-label="School Admission System on GitHub">
+              <img src="assets/img/school-admission.webp" alt="school-admission-system repository on GitHub with backend, frontend and scripts folders" loading="lazy" width="1000" height="681">
+            </a>
+            <div class="project__body">
+              <span class="project__kind"><i class="fa-solid fa-school"></i> Full-Stack · .NET + React</span>
+              <h3>School Admission System</h3>
+              <p>
+                First-come, first-served online admission where applying places a <strong>time-limited hold</strong> on a
+                seat and paying confirms it. Seat limits are enforced under concurrency with a PostgreSQL row lock
+                (<code>SELECT … FOR UPDATE</code>) and lazy expiry, verified by 30 backend integration tests on a real
+                database plus a two-instance burst test. Ships as one <code>docker compose up</code>.
+              </p>
+              <ul class="tags">
+                <li>C#</li><li>ASP.NET Core 8</li><li>EF Core</li><li>PostgreSQL</li><li>React 18</li><li>Vite</li><li>Docker</li><li>xUnit</li>
+              </ul>
+              <div class="project__links">
+                <span class="project__date"><i class="fa-regular fa-calendar"></i> Nov 2026</span>
+                <a href="https://github.com/fardinalam13/school-admission-system" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
 
           <article class="project reveal">
             <a class="project__media" href="https://github.com/fardinalam13/Eye-Cataract-Detection-App" target="_blank" rel="noopener" aria-label="Eye Cataract Detector on GitHub">
@@ -578,7 +604,7 @@
           <span class="section__kicker">07 — Contact</span>
           <h2 class="section__title">Let's build something together</h2>
           <p>
-            I'm open to full-stack .NET / Angular roles and interesting enterprise projects.
+            I'm open to full-stack .NET, Angular and Java roles and interesting enterprise projects.
             The fastest way to reach me is email or LinkedIn.
           </p>
           <div class="contact__actions">

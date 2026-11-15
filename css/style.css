@@ -271,7 +271,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .float-card i { font-size: 1.15rem; }
 .float-card--1 { top: 8%; left: -6%; animation-delay: -1s; }
-.float-card--2 { top: 48%; right: -10%; animation-delay: -3s; }
+.float-card--2 { top: 62%; right: -10%; animation-delay: -3s; }
 .float-card--3 { bottom: 6%; left: -2%; animation-delay: -5s; }
 
 .scroll-hint {
@@ -606,3 +606,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .lc__brand a { margin-left: auto; font-size: .85rem; font-weight: 600; color: var(--primary); white-space: nowrap; }
 .lc__brand a i { font-size: .75rem; margin-left: .25rem; }
 @media (max-width: 860px) { .lc__brand { width: 100%; } }
+
+/* fourth hero float card (Java) + inline code in project copy */
+.float-card--4 { top: 30%; right: -12%; animation-delay: -2s; }
+@media (max-width: 1024px) { .float-card--4 { right: -6%; } }
+@media (max-width: 480px) { .float-card--4 { right: -2%; } }
+.project__body code { font-family: ui-monospace, Consolas, monospace; font-size: .85em; padding: .1em .35em; border-radius: 4px; background: var(--primary-soft); color: var(--primary); }
