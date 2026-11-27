@@ -493,7 +493,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .contact > * { position: relative; }
 .contact p { color: var(--text-muted); font-size: 1.03rem; max-width: 520px; margin: 1rem auto 1.8rem; }
 .contact__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem; }
-.contact__loc { font-size: .9rem; margin: 1.6rem 0 0 !important; }
+.contact__loc { font-size: .9rem; margin: 1.6rem auto 0 !important; }
 .contact__loc i { color: var(--primary); margin-right: .4rem; }
 
 /* ---------- Footer ---------- */
@@ -612,3 +612,32 @@ button { font: inherit; color: inherit; cursor: pointer; }
 @media (max-width: 1024px) { .float-card--4 { right: -6%; } }
 @media (max-width: 480px) { .float-card--4 { right: -2%; } }
 .project__body code { font-family: ui-monospace, Consolas, monospace; font-size: .85em; padding: .1em .35em; border-radius: 4px; background: var(--primary-soft); color: var(--primary); }
+
+/* ---------- Organisation logos (experience & education) ---------- */
+.org { display: flex; align-items: center; gap: 1rem; margin-bottom: .2rem; }
+.org .timeline__company { margin-bottom: 0; }
+.org + .timeline__project { margin-top: 1.2rem; }
+.org__logo {
+  flex: none; width: 64px; height: 64px; border-radius: 16px; padding: 7px;
+  background: #fff; border: 1px solid rgba(27, 41, 34, .08);
+  box-shadow: 0 6px 18px -8px rgba(0, 0, 0, .35);
+  display: grid; place-items: center;
+  transition: transform .3s var(--ease);
+}
+.org__logo img { width: 100%; height: 100%; object-fit: contain; }
+.org__logo--sm { width: 56px; height: 56px; border-radius: 14px; padding: 6px; }
+.timeline__card:hover .org__logo, .edu-card:hover .org__logo { transform: translateY(-2px) rotate(-2deg); }
+
+.edu-card--logo { display: flex; gap: 1.1rem; align-items: flex-start; }
+.edu-card__logos { display: flex; flex-direction: column; gap: .5rem; flex: none; }
+.edu-card__body { min-width: 0; }
+
+.hero__social { flex-wrap: wrap; }
+
+@media (max-width: 480px) {
+  .org__logo { width: 54px; height: 54px; border-radius: 14px; padding: 6px; }
+  .org__logo--sm { width: 48px; height: 48px; border-radius: 12px; padding: 5px; }
+  .edu-card--logo { gap: .85rem; }
+  .hero__social { gap: .45rem; }
+  .hero__social a { width: 38px; height: 38px; font-size: .92rem; }
+}
